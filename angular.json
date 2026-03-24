@@ -70,11 +70,11 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "ng-x-rocket:build"
+            "buildTarget": "ng-x-rocket:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "ng-x-rocket:build:production"
+              "buildTarget": "ng-x-rocket:build:production"
             },
             "ci": {}
           }
@@ -82,7 +82,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ng-x-rocket:build"
+            "buildTarget": "ng-x-rocket:build"
           }
         },
         "test": {
