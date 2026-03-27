@@ -1,0 +1,16 @@
+<section class="weather-card">
+  @if (store.loading()) {
+    <p>Loading weather...</p>
+  } @else if (store.error()) {
+    <p>{{ store.error() }}</p>
+  } @else if (store.currentWeather(); as current) {
+    <h3>Current weather</h3>
+    <p>Temperature: {{ current.temperature }}°C</p>
+    <p>Wind speed: {{ current.windspeed }} km/h</p>
+    <p>Wind direction: {{ current.winddirection }}°</p>
+    <p>Weather code: {{ current.weathercode }}</p>
+    <p>Time: {{ current.time }}</p>
+  } @else {
+    <p>No weather data yet.</p>
+  }
+</section>

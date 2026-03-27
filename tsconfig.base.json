@@ -18,7 +18,9 @@
       "@shared": ["apps/ng-x-rocket/src/app/@shared"],
       "@shared/*": ["apps/ng-x-rocket/src/app/@shared/*"],
       "@env/*": ["apps/ng-x-rocket/src/environments/*"],
-      "weather": ["weather/src/index.ts"]
+      "@app/weather": ["libs/weather/src/index.ts"],
+      "@app/weather/state": ["libs/weather/state/index.ts"],
+      "@app/weather/ui": ["libs/weather/ui/index.ts"]
     }
   }
 }
