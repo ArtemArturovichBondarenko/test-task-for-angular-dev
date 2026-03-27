@@ -16,12 +16,12 @@
     "lib": ["es2018", "dom"],
     "baseUrl": "./",
     "paths": {
-      "@app/*": ["src/app/*"],
-      "@core": ["src/app/@core"],
-      "@core/*": ["src/app/@core/*"],
-      "@shared": ["src/app/@shared"],
-      "@shared/*": ["src/app/@shared/*"],
-      "@env/*": ["src/environments/*"]
+      "@app/*": ["apps/ng-x-rocket/src/app/*"],
+      "@core": ["apps/ng-x-rocket/src/app/@core"],
+      "@core/*": ["apps/ng-x-rocket/src/app/@core/*"],
+      "@shared": ["apps/ng-x-rocket/src/app/@shared"],
+      "@shared/*": ["apps/ng-x-rocket/src/app/@shared/*"],
+      "@env/*": ["apps/ng-x-rocket/src/environments/*"]
     },
     "useDefineForClassFields": false
   },

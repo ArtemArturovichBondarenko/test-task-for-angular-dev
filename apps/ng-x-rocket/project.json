@@ -1,32 +1,27 @@
 {
-  "$schema": "node_modules/nx/schemas/project-schema.json",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "name": "ng-x-rocket",
   "projectType": "application",
-  "generators": {
-    "@schematics/angular:component": {
-      "style": "scss"
-    }
-  },
-  "sourceRoot": "src",
+  "sourceRoot": "apps/ng-x-rocket/src",
   "prefix": "app",
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
       "options": {
-        "outputPath": "dist",
-        "index": "src/index.html",
-        "main": "src/main.ts",
-        "polyfills": "src/polyfills.ts",
-        "tsConfig": "tsconfig.app.json",
+        "outputPath": "dist/apps/ng-x-rocket",
+        "index": "apps/ng-x-rocket/src/index.html",
+        "main": "apps/ng-x-rocket/src/main.ts",
+        "polyfills": "apps/ng-x-rocket/src/polyfills.ts",
+        "tsConfig": "apps/ng-x-rocket/tsconfig.app.json",
         "aot": true,
         "assets": [
-          "src/favicon.ico",
-          "src/apple-touch-icon.png",
-          "src/robots.txt",
-          "src/manifest.webmanifest",
-          "src/assets"
+          "apps/ng-x-rocket/src/favicon.ico",
+          "apps/ng-x-rocket/src/apple-touch-icon.png",
+          "apps/ng-x-rocket/src/robots.txt",
+          "apps/ng-x-rocket/src/manifest.webmanifest",
+          "apps/ng-x-rocket/src/assets"
         ],
-        "styles": ["src/main.scss"],
+        "styles": ["apps/ng-x-rocket/src/main.scss"],
         "scripts": []
       },
       "configurations": {
@@ -51,10 +46,11 @@
             }
           ],
           "serviceWorker": true,
+          "ngswConfigPath": "apps/ng-x-rocket/ngsw-config.json",
           "fileReplacements": [
             {
-              "replace": "src/environments/environment.ts",
-              "with": "src/environments/environment.prod.ts"
+              "replace": "apps/ng-x-rocket/src/environments/environment.ts",
+              "with": "apps/ng-x-rocket/src/environments/environment.prod.ts"
             }
           ]
         },
@@ -93,18 +89,6 @@
           "ci": true,
           "coverage": true,
           "silent": true
-        }
-      }
-    },
-    "e2e": {
-      "executor": "@angular-devkit/build-angular:protractor",
-      "options": {
-        "protractorConfig": "e2e/protractor.conf.js",
-        "devServerTarget": "ng-x-rocket:serve"
-      },
-      "configurations": {
-        "production": {
-          "devServerTarget": "ng-x-rocket:serve:production"
         }
       }
     }
