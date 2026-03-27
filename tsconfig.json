@@ -1,33 +1,14 @@
-/* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
-  "compileOnSave": false,
   "compilerOptions": {
     "outDir": "./dist/out-tsc",
-    "sourceMap": true,
-    "declaration": false,
-    "module": "es2020",
-    "moduleResolution": "bundler",
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "importHelpers": true,
     "noImplicitAny": true,
-    "target": "ES2022",
     "typeRoots": ["node_modules/@types"],
-    "lib": ["es2018", "dom"],
-    "baseUrl": "./",
-    "paths": {
-      "@app/*": ["apps/ng-x-rocket/src/app/*"],
-      "@core": ["apps/ng-x-rocket/src/app/@core"],
-      "@core/*": ["apps/ng-x-rocket/src/app/@core/*"],
-      "@shared": ["apps/ng-x-rocket/src/app/@shared"],
-      "@shared/*": ["apps/ng-x-rocket/src/app/@shared/*"],
-      "@env/*": ["apps/ng-x-rocket/src/environments/*"]
-    },
     "useDefineForClassFields": false
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
     "strictInjectionParameters": true,
     "preserveWhitespaces": true
-  }
+  },
+  "extends": "./tsconfig.base.json"
 }

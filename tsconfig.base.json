@@ -1,0 +1,24 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "bundler",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "ES2022",
+    "module": "es2020",
+    "lib": ["es2018", "dom"],
+    "baseUrl": "./",
+    "paths": {
+      "@app/*": ["apps/ng-x-rocket/src/app/*"],
+      "@core": ["apps/ng-x-rocket/src/app/@core"],
+      "@core/*": ["apps/ng-x-rocket/src/app/@core/*"],
+      "@shared": ["apps/ng-x-rocket/src/app/@shared"],
+      "@shared/*": ["apps/ng-x-rocket/src/app/@shared/*"],
+      "@env/*": ["apps/ng-x-rocket/src/environments/*"],
+      "weather": ["weather/src/index.ts"]
+    }
+  }
+}
