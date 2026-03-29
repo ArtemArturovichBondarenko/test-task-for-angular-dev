@@ -5,6 +5,7 @@
       <span translate>Hello world !</span>
     </h1>
     <app-weather></app-weather>
+    <app-block-builder [data]="blockBuilderData"></app-block-builder>
     <app-loader [isLoading]="true"></app-loader>
     <q [hidden]="isLoading">{{ quote }}</q>
   </div>

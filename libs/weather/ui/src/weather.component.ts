@@ -4,7 +4,6 @@ import { WeatherStore } from '@app/weather/state';
 
 @Component({
   selector: 'app-weather',
-  standalone: true,
   templateUrl: './weather.component.html',
   styleUrls: ['./weather.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,

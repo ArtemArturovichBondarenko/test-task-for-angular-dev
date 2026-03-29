@@ -1,0 +1,21 @@
+<div class="builder">
+  <div class="builder-list" cdkDropList [cdkDropListData]="blocks()" (cdkDropListDropped)="drop($event)">
+    @for (block of blocks(); track block.id) {
+    <div class="builder-item" cdkDrag>
+      <span class="builder-label">Block #{{ $index + 1 }}</span>
+
+      <select [ngModel]="block.key" (ngModelChange)="updateBlockKey(block.id, $event)">
+        @for (key of availableKeys(); track key) {
+        <option [value]="key">{{ key }}</option>
+        }
+      </select>
+
+      <span class="builder-value">{{ getValue(block.key) }}</span>
+
+      <button type="button" (click)="removeBlock(block.id)">Delete</button>
+    </div>
+    }
+  </div>
+
+  <button type="button" (click)="addBlock()">Add block</button>
+</div>

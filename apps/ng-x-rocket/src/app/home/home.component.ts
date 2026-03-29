@@ -13,6 +13,17 @@ export class HomeComponent implements OnInit {
   quote: string | undefined;
   isLoading = false;
 
+  readonly blockBuilderData: Record<string, unknown> = {
+    name: 'John',
+    age: 30,
+    city: 'New York',
+    child: {
+      name: 'Ioana',
+      age: 25,
+      city: 'Bucharest',
+    },
+  };
+
   constructor(private quoteService: QuoteService) {}
 
   ngOnInit() {
@@ -22,7 +33,7 @@ export class HomeComponent implements OnInit {
       .pipe(
         finalize(() => {
           this.isLoading = false;
-        })
+        }),
       )
       .subscribe((quote: string) => {
         this.quote = quote;

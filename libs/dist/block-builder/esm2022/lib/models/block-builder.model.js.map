@@ -1,0 +1,1 @@
+{"version":3,"file":"block-builder.model.js","sourceRoot":"","sources":["../../../../../block-builder/src/lib/models/block-builder.model.ts"],"names":[],"mappings":"","sourcesContent":["export interface BlockItem {\n  id: string;\n  key: string;\n}\n"]}
