@@ -20,7 +20,8 @@
       "@env/*": ["apps/ng-x-rocket/src/environments/*"],
       "@app/weather": ["libs/weather/src/index.ts"],
       "@app/weather/state": ["libs/weather/state/index.ts"],
-      "@app/weather/ui": ["libs/weather/ui/index.ts"]
+      "@app/weather/ui": ["libs/weather/ui/index.ts"],
+      "block-builder": ["libs/block-builder/src/index.ts"]
     }
   }
 }
