@@ -6,7 +6,7 @@ import { SharedModule } from '@shared';
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { WeatherComponent } from '../../../../../libs/weather/ui/src/weather.component';
-import { BlockBuilderComponent } from '../../../../../libs/block-builder/src/lib/block-builder/block-builder.component';
+import { BlockBuilderComponent } from '../../../../../libs/block-builder/src/block-builder/block-builder.component';
 
 @NgModule({
   imports: [CommonModule, TranslateModule, SharedModule, HomeRoutingModule, WeatherComponent, BlockBuilderComponent],

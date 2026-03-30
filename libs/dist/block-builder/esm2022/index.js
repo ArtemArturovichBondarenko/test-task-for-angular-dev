@@ -1,2 +1,2 @@
-export * from './lib/block-builder/block-builder';
+export * from './block-builder/block-builder.component';
 //# sourceMappingURL=index.js.map

@@ -4,6 +4,12 @@
   gap: 12px;
 }
 
+.builder-hint {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
 .builder-list {
   display: flex;
   flex-direction: column;
@@ -19,6 +25,14 @@
   border: 1px solid #dcdcdc;
   border-radius: 8px;
   background: #fff;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.builder-item--active {
+  border-color: #f59e0b;
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.2);
 }
 
 .builder-label {

@@ -1,1 +1,1 @@
-export * from './lib/block-builder/block-builder.component';
+export * from './block-builder/block-builder.component';
