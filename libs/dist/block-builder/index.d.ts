@@ -1,1 +1,1 @@
-export * from './block-builder/block-builder.component';
+export { BlockBuilderComponent } from './block-builder/block-builder.component';

@@ -1,1 +1,1 @@
-{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../block-builder/src/index.ts"],"names":[],"mappings":"AAAA,cAAc,yCAAyC,CAAC","sourcesContent":["export * from './block-builder/block-builder.component';\n"]}
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../block-builder/src/index.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,qBAAqB,EAAE,MAAM,yCAAyC,CAAC","sourcesContent":["export { BlockBuilderComponent } from './block-builder/block-builder.component';\n"]}
